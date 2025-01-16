@@ -23,8 +23,9 @@ jobs:
           context: ./src
           push: true
           file: ./src/Dockerfile
-          tags: flavioantoniobr/fakeshop:latest
-                flavioantoniobr/fakeshop:v${{ github.run_number }}
+          tags: |
+            flavioantoniobr/fakeshop:latest
+            flavioantoniobr/fakeshop:v${{ github.run_number }}
 
         
 
